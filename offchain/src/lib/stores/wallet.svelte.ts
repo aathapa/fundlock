@@ -2,12 +2,13 @@ import { browser } from "$app/environment";
 import { WalletService } from "$lib/services/WalletService";
 import { websocketStore } from "$lib/stores/websocket.svelte";
 import type { WalletState, ContractConfig } from "$lib/types";
+import { CONTRACT_ADDRESS, NETWORK } from "$lib/utils/envData";
 import { disconnect } from "@stacks/connect";
 
 const CONTRACT_CONFIG: ContractConfig = {
-	address: "ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM",
+	address: CONTRACT_ADDRESS,
 	name: "lock",
-	network: "devnet",
+	network: NETWORK,
 };
 
 class WalletStore {
