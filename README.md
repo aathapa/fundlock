@@ -13,6 +13,18 @@ fundlock/
 └── settings/          # Network settings (Devnet, Testnet, Mainnet)
 ```
 
+## Features
+
+### Real-Time Updates via WebSocket
+
+The application uses WebSocket connections to provide **live updates** without requiring page refreshes:
+
+- **Transaction Status** - Get instant notifications when transaction status changes (pending → success)
+- **Wallet Balance** - Real-time wallet balance updates as transactions are processed
+- **Automatic Synchronization** - Frontend stays synchronized with blockchain state
+
+This ensures users always see the most current information about their transactions and wallet balances.
+
 ## Prerequisites
 
 - [Clarinet](https://github.com/hirosystems/clarinet) - Stacks smart contract development tool
@@ -169,10 +181,10 @@ Vitest-based unit tests for smart contracts using Clarinet SDK.
 
 SvelteKit application that interacts with the smart contracts:
 
-- Wallet integration (Stacks wallet)
-- Transaction management
-- Contract interaction UI
-- Real-time updates via WebSocket
+- **Wallet integration** - Connect with Stacks wallet
+- **Transaction management** - Submit and track transactions
+- **Contract interaction UI** - User-friendly interface for contract operations
+- **Real-time WebSocket updates** - Live updates for transaction status and wallet balances without page refresh
 
 ## Learn More
 
