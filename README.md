@@ -1,6 +1,6 @@
 # Fundlock
 
-A Stacks blockchain application for time-locked fund management with a Svelte frontend.
+A Stacks blockchain application for fund management with a Svelte frontend.
 
 ## Project Structure
 
